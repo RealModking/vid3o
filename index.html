@@ -7,11 +7,18 @@
   <a class="navbar-brand" href="index.html">Home</a>
   <a class="topnav a" href="updates.html">Updates</a>
   <a class="topnav a" href="donation.html">donation</a>
+  <a  class="topnav a" href=""><script type="application/javascript">
+    function getIP(json) {
+      document.write("IP address is: ", json.ip);
+    }
+  </script>
+  <script type="application/javascript" src="http://ipinfo.io/?format=jsonp&callback=getIP"></script></a>
+  <a class="topnav a" href=""></a>
 </nav>
 </div>
   </header>
 <head>
-  <title>Home page</title>
+  <title>Home</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -23,32 +30,35 @@
 </head>
 <body class="bk">
 <div class="test5">
-    <div id="clockbox" style="font:40pt Arial; color:#6050a3;"></div>
+  
+  <div class="animated_rainbow_2">Free Movies</div>
+  <div class="animated_rainbow_2"><p>Check the updates page for more</p></div>
+  <div class="animated_rainbow_1">    <div id="clockbox" style="font:40pt Arial; color:#ffe100;"></div>
 
-    <script type="text/javascript">
-    var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-    var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
-    
-    function GetClock(){
-    var d=new Date();
-    var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
-    var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
-    
-    if(nhour==0){ap=" AM";nhour=12;}
-    else if(nhour<12){ap=" AM";}
-    else if(nhour==12){ap=" PM";}
-    else if(nhour>12){ap=" PM";nhour-=12;}
-    
-    if(nmin<=9) nmin="0"+nmin;
-    if(nsec<=9) nsec="0"+nsec;
-    
-    var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
-    document.getElementById('clockbox').innerHTML=clocktext;
-    }
-    
-    GetClock();
-    setInterval(GetClock,1000);
-    </script>
+  <script type="text/javascript">
+  var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+  var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+  
+  function GetClock(){
+  var d=new Date();
+  var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+  var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+  
+  if(nhour==0){ap=" AM";nhour=12;}
+  else if(nhour<12){ap=" AM";}
+  else if(nhour==12){ap=" PM";}
+  else if(nhour>12){ap=" PM";nhour-=12;}
+  
+  if(nmin<=9) nmin="0"+nmin;
+  if(nsec<=9) nsec="0"+nsec;
+  
+  var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+  document.getElementById('clockbox').innerHTML=clocktext;
+  }
+  
+  GetClock();
+  setInterval(GetClock,1000);
+  </script></div>
 </div>
 
 <div class="test5">
@@ -57,6 +67,7 @@
     <a href="the_lego.movie_2014.html"><img src="imgs/aToyMDUyOw.jpg" alt=""></a>
     <a href="the_lego.movie_2_2019.html"><img src="imgs/aTo1NjgyOw.jpg" alt=""></a>
     <a href="little.nicky.2000.html"><img src="imgs/aToxMzMxOw.jpg" alt=""></a>
+    <a href="Justice_league_snyders_cut_2021.html"><img src="imgs/aToxMDMzMDs.jpg" alt=""></a>
 </div>
 </body>
 <section class="dark">
@@ -69,7 +80,7 @@
         <!--Grid column-->
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        <p class="copyright-text"><p> Copyright &copy; 2019-<script>document.write(new Date().getFullYear())</script> All Rights Reserved by <a href="">Ashley</a>.</p>
+      <div class="animated_rainbow_1"><p class="copyright-text"><p> Copyright &copy; 2019-<script>document.write(new Date().getFullYear())</script> All Rights Reserved by <a href="">Ashley</a>.</p></div>
       <a class="text-white" href="https://mdbootstrap.com/"></a>
     </div>
     <!-- Copyright -->
@@ -77,3 +88,9 @@
   <!-- Footer -->
 </section>
 </html>
+
+
+
+
+
+<!--<p>i am updating the website</p>-->
